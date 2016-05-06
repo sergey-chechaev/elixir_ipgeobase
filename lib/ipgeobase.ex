@@ -1,0 +1,2 @@
+defmodule Ipgeobase do
+end
