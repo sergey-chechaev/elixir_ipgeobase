@@ -1,2 +1,4 @@
-%{"httpotion": {:hex, :httpotion, "2.2.2"},
-  "ibrowse": {:hex, :ibrowse, "4.2.2"}}
+%{"floki": {:hex, :floki, "0.8.0"},
+  "httpotion": {:hex, :httpotion, "2.2.2"},
+  "ibrowse": {:hex, :ibrowse, "4.2.2"},
+  "mochiweb_html": {:hex, :mochiweb_html, "2.13.0"}}
