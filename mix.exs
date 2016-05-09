@@ -8,6 +8,7 @@ defmodule Ipgeobase.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      description: description,
+     package: package,
      deps: deps]
   end
 
@@ -15,6 +16,16 @@ defmodule Ipgeobase.Mixfile do
     """
     Find Russian and Ukraine city by IP address. Source http://ipgeobase.ru/
     """
+  end
+
+  defp package do
+    [
+     files: ["lib", "mix.exs", "README.md"],
+     maintainers: ["Sergey Chechaev"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/sergey-chechaev/elixir_ipgeobase",
+              "Docs" => "https://hexdocs.pm/ipgeobase/0.0.1"}
+     ]
   end
   # Configuration for the OTP application
   #
@@ -36,7 +47,8 @@ defmodule Ipgeobase.Mixfile do
     [
       {:httpotion, "~> 2.2.0"},
       {:floki, "~> 0.8"},
-      {:iconv, "~> 1.0"}
+      {:iconv, "~> 1.0"},
+      {:ex_doc, "~> 0.11", only: :dev},
     ]
   end
 end

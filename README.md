@@ -1,6 +1,15 @@
 # Ipgeobase
 
-**TODO: Add description**
+***Find Russian and Ukraine city by IP address. Source http://ipgeobase.ru/***
+
+  ## Examples
+
+      iex> ip = Ipgeobase.find_by_ip("46.188.121.160")
+      %Ipgeobase{city: "Москва", country: "RU"}
+      iex> ip.city
+      "Москва"
+      iex> ip.country
+      "RU"
 
 ## Installation
 
