@@ -1,4 +1,5 @@
 defmodule Ipgeobase do
+  defstruct city: "", country: ""
   @initial_state "http://ipgeobase.ru:7020/geo?"
 
   def host, do: @initial_state
@@ -9,4 +10,5 @@ defmodule Ipgeobase do
     response = HTTPotion.get(uri_query)
     Ipgeobase.Mean.mean(response.body)
   end
+
 end

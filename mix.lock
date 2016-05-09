@@ -1,4 +1,5 @@
 %{"floki": {:hex, :floki, "0.8.0"},
   "httpotion": {:hex, :httpotion, "2.2.2"},
   "ibrowse": {:hex, :ibrowse, "4.2.2"},
+  "iconv": {:hex, :iconv, "1.0.0"},
   "mochiweb_html": {:hex, :mochiweb_html, "2.13.0"}}

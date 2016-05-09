@@ -50,7 +50,9 @@ defmodule IpgeobaseTest do
     assert Floki.find(@xml_windows_1251, "city") |> Floki.text == "Санкт-Петербург"
   end
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "Test #find_by_ip" do
+    ip = Ipgeobase.find_by_ip("46.188.121.160")
+    assert ip.city == "Москва"
   end
+
 end

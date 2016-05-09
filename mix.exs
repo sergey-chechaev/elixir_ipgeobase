@@ -29,7 +29,8 @@ defmodule Ipgeobase.Mixfile do
   defp deps do
     [
       {:httpotion, "~> 2.2.0"},
-      {:floki, "~> 0.8"}
+      {:floki, "~> 0.8"},
+      {:iconv, "~> 1.0"}
     ]
   end
 end
