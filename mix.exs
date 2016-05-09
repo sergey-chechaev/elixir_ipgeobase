@@ -7,9 +7,15 @@ defmodule Ipgeobase.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
      deps: deps]
   end
 
+  defp description do
+    """
+    Find Russian and Ukraine city by IP address. Source http://ipgeobase.ru/
+    """
+  end
   # Configuration for the OTP application
   #
   # Type "mix help compile.app" for more information
