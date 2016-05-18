@@ -1,6 +1,6 @@
 # Ipgeobase
 
-**Find Russian and Ukraine city by IP address. Source http://ipgeobase.ru/**
+**Find Russian and Ukraine city by IP address and find country for other country. Source http://ipgeobase.ru/**
 
   ## Examples
 
