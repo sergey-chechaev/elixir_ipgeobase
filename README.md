@@ -10,6 +10,11 @@
       "Москва"
       iex> ip.country
       "RU"
+      
+      iex> Ipgeobase.find_by_ip("5.10.159.255")
+      %Ipgeobase{city: "", country: "GB"}
+      iex> ip.country
+      "GB"
 
 ## Installation
 
